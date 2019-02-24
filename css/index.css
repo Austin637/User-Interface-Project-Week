@@ -394,6 +394,10 @@ header h1 {
 	margin: 50px 0;
 }
 
+.tab-component {
+	margin-bottom: 105px;
+}
+
 .tab-component .tabs {
 	display: flex;
 	justify-content: space-between;
@@ -406,8 +410,23 @@ header h1 {
 	padding: 10px 0;
 }
 
+.tab-component .tabs .tab:hover {
+	background: #5E9FB9;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.tab-component .tabs .current-tab {
+	background: #5E9FB9;
+	color: #FFFFFF;
+}
+
 .tab-component .cards {
 	margin: 50px 0;
+}
+
+.tab-component .cards .card {
+	display: none;
 }
 
 .tab-component .cards .card h2 {
@@ -423,6 +442,10 @@ header h1 {
 
 .tab-component .cards .card .row {
 	display: flex;
+}
+
+.tab-component .cards .current-card {
+	display: block;
 }
 
 footer {

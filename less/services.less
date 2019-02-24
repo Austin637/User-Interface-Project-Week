@@ -3,6 +3,7 @@
 }
 
 .tab-component {
+	margin-bottom: 105px;
 	.tabs {
 		display: flex;
 		justify-content: space-between;
@@ -11,12 +12,21 @@
 			width: 22%;
 			text-align: center;
 			padding: 10px 0;
+			&:hover {
+				background: @tab-select-bgd;
+				color: @body-bgd-color;
+				cursor: pointer;
+			}
+		}
+		.current-tab {
+			background: @tab-select-bgd;
+			color: @body-bgd-color;
 		}
 	}
 	.cards {
 		margin: 50px 0;
 		.card {
-			// display: none;
+			display: none;
 			h2 {
 				margin-bottom: 10px;
 			}
@@ -29,6 +39,9 @@
 			.row {
 				display: flex;
 			}
+		}
+		.current-card {
+			display: block;
 		}
 	}
 }
