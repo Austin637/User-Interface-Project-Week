@@ -2,14 +2,23 @@ footer {
 	background-color: @footer-bgd;
 	padding: 60px 5% 10px;
 	color: @body-bgd-color;
+	@media @phone {
+		padding-top: 15px;
+	}
 	.row {
 		display: flex;
 		justify-content: space-around;
 		padding-bottom: 40px;
+		@media @phone {
+			flex-direction: column;
+		}
 	}
 	.fourth {
 		display: flex;
 		flex-direction: column;
+		@media @phone {
+			margin-top: 20px;
+		}
 	}
 	h2 {
 		font-size: 2.0;
@@ -22,12 +31,16 @@ footer {
 	.copyright {
 		text-align: center;
 		font-size: 1.2rem;
+		@media @phone {
+			text-align: left;
+		}
 	}
 	input {
 		width: 97%;
 		padding: 10px;
 		border-radius: 5px;
 		margin-top: 10px;
+		border: 1px solid @footer-bgd
 	}
 }
 
